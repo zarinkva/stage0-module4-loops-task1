@@ -39,7 +39,7 @@ public class RepeatIsBadTaskTest extends BaseIOTest {
                 .filter(line -> line.contains("System.out.println"))
                 .collect(Collectors.toList());
 
-        assertEquals(0, result.size());
-        assertEquals(20, souts.size());
+        assertEquals(1, result.size());
+        assertEquals(1, souts.size());
     }
 }
